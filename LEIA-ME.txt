@@ -1,0 +1,22 @@
+# Jarvis — pacote instalável (PWA)
+
+## O que está incluído
+- `index.html`: aplicativo Jarvis original, preparado para instalação.
+- `manifest.webmanifest`: nome, ícones e modo de exibição do aplicativo.
+- `sw.js`: service worker para armazenar os arquivos principais e abrir a interface sem conexão.
+- `icon-192.png` e `icon-512.png`: ícones extraídos do próprio HTML original.
+
+## Como publicar
+1. Envie **todos os arquivos desta pasta**, mantendo-os juntos, para uma hospedagem de site estático com HTTPS.
+2. A pasta publicada precisa abrir `index.html` pela raiz do endereço.
+3. Abra o endereço HTTPS no Google Chrome do Android.
+4. Toque no menu ⋮ e escolha **Instalar aplicativo** ou **Adicionar à tela inicial**.
+5. Confirme. O ícone Jarvis aparecerá na tela inicial.
+
+## Primeiro uso
+Na primeira conversa, o Jarvis pedirá uma chave de API da Groq. Cole sua própria chave no campo do aplicativo. Ela fica guardada no armazenamento local do navegador/aplicativo deste aparelho.
+
+**Segurança:** não coloque uma chave de API dentro do HTML nem compartilhe o pacote com uma chave preenchida. Qualquer chave escrita no código de uma página pode ser vista por quem acessar o arquivo.
+
+## Limites
+A interface e os arquivos principais podem abrir offline depois da primeira visita, mas conversar com a Groq, pesquisar e gerar mídia exige internet e os serviços externos correspondentes. Este pacote não inclui uma chave de API nem faz a hospedagem automaticamente.

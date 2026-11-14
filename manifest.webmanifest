@@ -1,0 +1,27 @@
+{
+  "id": "./",
+  "name": "Jarvis",
+  "short_name": "Jarvis",
+  "description": "Seu assistente pessoal em português.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#05060D",
+  "theme_color": "#0B0B12",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
